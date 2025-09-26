@@ -9,16 +9,10 @@
   <h1>hello</h1>
   <script>
     // "Child component"
-    function Greeting(props) {
-      return "Hello, " + props.name + "!<br>";
-    }
+    let Greeting=(props)=>("hello"  ,props.name,"<br>")
 
-    // "Parent component"
-    function App() {
-      return Greeting({ name: "Arjun" }) + Greeting({ name: "karan" });
-    }
+    let App=()=>( (Greeting({name:"samu"})+Greeting({name:"ram"})))
 
-    // Run App
     document.write(App());
   </script>
 </body>

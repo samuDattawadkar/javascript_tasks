@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is arrow function</h1>
+
+    <p id="demo"></p>
+     <p id="demo1"></p>
+     <br>
+     <br>
+     
+    <script>
+        let add=(a,b)=>(a+b)
+        let result=add(5,10)
+        document.write("Addition of a and b no is   :",result,"<br>")
+
+        let message=()=>("Arrow functions were introduced in ES6 Arrow functions allows a shorter syntax for function expressions.You don't need the function keyword, the return keyword, and the curly brackets:")
+        document.write("message",message(),"<br>")
+
+        let sample=(val)=>"information :"+val
+        document.getElementById("demo").innerHTML=sample("This example shows an Arrow Function with a parameter.","<br>")
+
+        let without=val=>"inormation:"+val
+        document.getElementById("demo1").innerHTML=sample("This example shows an Arrow Function without a parameter.","<br>")
+
+        let info=()=>("<br>","You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them")
+        document.write(info())
+    </script>
+    
+</body>
+</html>

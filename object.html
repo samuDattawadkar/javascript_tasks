@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Display all properties of a person object using for in loop</h1>
+    <p id="demo"></p>
+
+    <script>
+        let info={name:'samu',age:22,subject:"python"};
+
+        document.write(info.name,"<br>");
+
+        let txt = "";
+        for (let x in info) {
+         txt += info[x] + " ";
+        }
+
+document.getElementById("demo").innerHTML = txt;
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>This is array program</h1>
+    <p id="demo"></p>
+    <script>
+        let a=[1,2,93,4,25,61,7,8,9,10]
+        document.write("This is the array:  ",a,"<br>");
+        a.sort((a,b)=>a-b)
+        document .write("sorting in numbers: ",a,"<br>");//(a - b) for small to big assending order,  (b - a) for big to small desending order
+        //Compare 1 and 10 → 1 - 10 = -9 → negative → 1 stays before 10.
+         //Comare 10 and 2 → 10 - 2 = 8 → positive → swap → 2 before 10.
+
+        document.write("maximum number in array:",Math.max(...a),"<br>");
+        document.write("small number in array: ",Math.min(...a),"<br>");
+        document.write("find the no using indexing: ",a[1]);
+        document.write("size of array: ", a.length, "<br>");
+        document.write("reverse of array : ", a.reverse(), "<br>")
+        document.write("unshift: ",a.unshift(20), "<br>")//Add at the beginning
+        document.write("Shift means Remove first element: ",a.shift())//Remove first element
+        document.write("<br><br><br>")
+
+
+        let b=["Ram","Sham","Karan","Arjun","samruddhi"];
+        document.write("display b array: ",b,"<br>");
+        document.write("convert 1 index name into upper case : " + b[1].toUpperCase() + "<br>");
+        document.write("find the name using indexing: ",b[3],"<br>");
+        document.write("Original array b: ", b, "<br>");
+        document.write("Size of array b: ", b.length, "<br>");
+        b.push("Vijay");
+        document.write("After push 'Vijay': ", b, "<br>");
+        let popped = b.pop();
+        document.write("Popped element: ", popped, "<br>");
+        document.write("After pop: ", b, "<br>");
+        document.write("sorting : ",b.sort());//sort() converts elements to strings and sorts alphabetically.
+        
+
+    </script>
+</body>
+</html>

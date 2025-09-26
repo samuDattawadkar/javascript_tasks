@@ -1,0 +1,7 @@
+- [ ] Check Git status and initialize if needed
+- [ ] Add all files to Git
+- [ ] Commit changes
+- [ ] Check if GitHub CLI is installed
+- [ ] Install GitHub CLI if not present
+- [ ] Create GitHub repository
+- [ ] Push code to GitHub

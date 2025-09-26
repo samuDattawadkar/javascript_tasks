@@ -8,10 +8,18 @@
 <body>
   <h1>hello</h1>
   <script>
-    // "Child component"
-    let Greeting=(props)=>("hello"  ,props.name,"<br>")
+ //single props display
+    let Greet = (props) => "Hello, my name is " + props.name;
+  let Apps = () => Greet({ name: "Samu" }) + "<br>" + Greet({ name: "Arjun" });
+  document.write(Apps());
 
-    let App=()=>( (Greeting({name:"samu"})+Greeting({name:"ram"})))
+
+
+// multiple passing props
+    // "Child component"
+    let Greeting=(props)=>("hello MY Name is " +props.name +"  my age is :"+props.age)
+    // parent class
+    let App=()=>( (Greeting({name:"samu ",age:23}) +"<br>"+Greeting({name:"Arjun",age:22})))
 
     document.write(App());
   </script>
